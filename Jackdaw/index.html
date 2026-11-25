@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <div class="barrier">
+            <h1> Link Word Game</h1>
+        <p id="feedback" aria-live="polite"></p>
+        <div class="grid">
+            <div id="gameboard">
+                <div class="game-box word-box" aria-label="Left word: couch">couch</div>
+                <div class="game-box input-box">
+                    <form id="word-form" class="word-form">
+                        <label for="user-word">Your word</label>
+                        <input id="user-word" name="user-word" type="text" placeholder="Enter a word">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="game-box word-box" aria-label="Right word: salad">salad</div>
+            </div>
+            <div id="timer" role="progressbar" aria-label="Time remaining" aria-valuemin="0" aria-valuemax="20" aria-valuenow="20">
+                <div id="timer-bar" aria-hidden="true"></div>
+            </div>
+            <p id="timer-message" role="status" hidden></p>
+            <p id="last-link" hidden>Last Link!</p>
+
+        </div>
+
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="script.js" defer></script>
+    </body>
+</html>
